@@ -11,12 +11,12 @@ public class App {
         Product beer = new Product("Пиво", 200);
         Product chiken = new Product("Курица", 250);
         Product fish = new Product("Рыба", 500);
-        //Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner());
+        Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner());
 
         Person sasha = new Person("Саша",500);
         Person alena = new Person("Алена",1500);
         Person ben = new Person("Бен",60);
-        //Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
+        Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
 
         List<Product> productList = new ArrayList<>();
         productList.add(milk);
