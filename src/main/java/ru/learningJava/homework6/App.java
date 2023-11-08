@@ -24,11 +24,13 @@ public class App {
         productList.add(beer);
         productList.add(chiken);
         productList.add(fish);
+        productList.add(product);
 
         List<Person> visitors = new ArrayList<>();
         visitors.add(sasha);
         visitors.add(alena);
         visitors.add(ben);
+        visitors.add(person);
 
 
 
@@ -57,9 +59,9 @@ public class App {
 
 
     static String getPersonNameFromScaner(){
+        System.out.println("Введите имя покупателя");
         Scanner scanPersonName = new Scanner(System.in);
         String personName = scanPersonName.nextLine();
-        System.out.println("Введите имя покупателя");
         while (personName == "" || personName == null){
             System.out.println("Имя покупателя не может быть пустым");
             personName = scanPersonName.nextLine();
@@ -68,9 +70,9 @@ public class App {
     }
 
     static int getPersonMoneyFromScaner(){
+        System.out.println("Введите кол-во денег покупателя");
         Scanner scanPersonMoney = new Scanner(System.in);
         int personMoney = scanPersonMoney.nextInt();
-        System.out.println("Введите кол-во денег покупателя");
         while (personMoney < 0){
             System.out.println("Кол-во денег не может быть отрицательным");
             personMoney = scanPersonMoney.nextInt();
@@ -79,9 +81,9 @@ public class App {
     }
 
     static String getProductNameFromScaner() {
+        System.out.println("Введите название продукта");
         Scanner scanProductName = new Scanner(System.in);
         String productName = scanProductName.nextLine();
-        System.out.println("Введите название продукта");
         while (productName == "" || productName == null) {
             System.out.println("Названия продукта не может быть пустым");
             productName = scanProductName.nextLine();
@@ -90,9 +92,9 @@ public class App {
     }
 
     static int getProductPriceFromScanner(){
+        System.out.println("Введите цену продукта");
         Scanner scanProductPrice = new Scanner(System.in);
         int productPrice = scanProductPrice.nextInt();
-        System.out.println("Введите цену продукта");
         while (productPrice < 0){
             System.out.println("Цена продукта не может быть отрицательным");
             productPrice = scanProductPrice.nextInt();
