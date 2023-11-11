@@ -11,12 +11,14 @@ public class App {
         Product beer = new Product("Пиво", 200);
         Product chiken = new Product("Курица", 250);
         Product fish = new Product("Рыба", 500);
-        Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner());
+        //Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner());
+        ProductDiscount sugar = new ProductDiscount("Сахар", 100,10);
+        ProductDiscount productDiscount = new ProductDiscount(getProductNameFromScaner(), getProductPriceFromScanner(),getDiscountFromScanner());
 
         Person sasha = new Person("Саша",500);
         Person alena = new Person("Алена",1500);
         Person ben = new Person("Бен",60);
-        Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
+        //Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
 
         List<Product> productList = new ArrayList<>();
         productList.add(milk);
@@ -24,15 +26,16 @@ public class App {
         productList.add(beer);
         productList.add(chiken);
         productList.add(fish);
-        productList.add(product);
+        //productList.add(product);
+        productList.add(sugar);
+        //productList.add(productDiscount);
+
 
         List<Person> visitors = new ArrayList<>();
         visitors.add(sasha);
         visitors.add(alena);
         visitors.add(ben);
-        visitors.add(person);
-
-
+        //visitors.add(person);
 
 
         LinkedList<Person> queue = new LinkedList(visitors);
@@ -82,10 +85,11 @@ public class App {
 
     static String getProductNameFromScaner() {
         System.out.println("Введите название продукта");
+        String regex = "\\d+";
         Scanner scanProductName = new Scanner(System.in);
         String productName = scanProductName.nextLine();
-        while (productName == "" || productName == null) {
-            System.out.println("Названия продукта не может быть пустым");
+        while (productName == "" || productName == null || productName.length() < 3 || productName.matches(regex)) {
+            System.out.println("Названия продукта некорректно, введите снова");
             productName = scanProductName.nextLine();
         }
         return productName;
@@ -95,10 +99,21 @@ public class App {
         System.out.println("Введите цену продукта");
         Scanner scanProductPrice = new Scanner(System.in);
         int productPrice = scanProductPrice.nextInt();
-        while (productPrice < 0){
+        while (productPrice <= 0){
             System.out.println("Цена продукта не может быть отрицательным");
             productPrice = scanProductPrice.nextInt();
         }
         return productPrice;
+    }
+
+    static int getDiscountFromScanner(){
+        System.out.println("Введите величину скидки");
+        Scanner scanDiscount = new Scanner(System.in);
+        int discount = scanDiscount.nextInt();
+        while (discount <= 0 || discount > 100){
+            System.out.println("Величина скидки некорректна, введите снова");
+            discount = scanDiscount.nextInt();
+        }
+        return discount;
     }
 }
