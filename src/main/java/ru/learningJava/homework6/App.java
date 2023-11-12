@@ -13,7 +13,7 @@ public class App {
         Product fish = new Product("Рыба", 500);
         //Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner());
         ProductDiscount sugar = new ProductDiscount("Сахар", 100,10);
-        ProductDiscount productDiscount = new ProductDiscount(getProductNameFromScaner(), getProductPriceFromScanner(),getDiscountFromScanner());
+        //ProductDiscount productDiscount = new ProductDiscount(getProductNameFromScaner(), getProductPriceFromScanner(),getDiscountFromScanner());
 
         Person sasha = new Person("Саша",500);
         Person alena = new Person("Алена",1500);
@@ -56,7 +56,7 @@ public class App {
         }
 
         System.out.println(visitors);
-
+        System.out.println(sugar.currentDate);
     }
 
 

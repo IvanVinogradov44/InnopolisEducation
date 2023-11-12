@@ -5,7 +5,9 @@ import java.util.Objects;
 
 public class ProductDiscount extends Product{
     private int discount;
-    private Date expirationDate;
+    private Date discountExpirationDate = new Date(123,10,10);
+
+    public Date currentDate = new Date();
 
     public ProductDiscount(String productName, int price, int discount) {
         super(productName, price);
@@ -17,7 +19,11 @@ public class ProductDiscount extends Product{
     }
     @Override
     public int getPrice(){
-        return price - (price/100*discount);
+        if(currentDate.compareTo(discountExpirationDate) <0) {
+            price = price - (price / 100 * discount);
+            int i=1;
+        }
+        return price;
     }
 
     @Override
