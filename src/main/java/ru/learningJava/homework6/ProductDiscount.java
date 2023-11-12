@@ -5,12 +5,12 @@ import java.util.Objects;
 
 public class ProductDiscount extends Product{
     private int discount;
-    private Date discountExpirationDate = new Date(123,10,10);
+    private Date discountExpirationDate = new Date(123,10,13);
 
-    public Date currentDate = new Date();
+    protected Date currentDate = new Date();
 
-    public ProductDiscount(String productName, int price, int discount) {
-        super(productName, price);
+    public ProductDiscount(String productName, int price, int discount, boolean isKidAvailable) {
+        super(productName, price, isKidAvailable);
         this.discount = discount;
     }
 
@@ -19,11 +19,17 @@ public class ProductDiscount extends Product{
     }
     @Override
     public int getPrice(){
-        if(currentDate.compareTo(discountExpirationDate) <0) {
-            price = price - (price / 100 * discount);
-            int i=1;
+        int cost = 0;
+        if(currentDate.compareTo(discountExpirationDate) <=0) {
+            double price = this.price - (this.price / 100 * discount);
+            cost = (int)price;
         }
-        return price;
+        return cost;
+    }
+
+    @Override
+    public boolean isDiscountProduct() {
+        return super.isDiscountProduct = true;
     }
 
     @Override

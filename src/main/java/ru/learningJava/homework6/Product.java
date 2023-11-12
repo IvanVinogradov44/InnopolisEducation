@@ -5,10 +5,13 @@ import java.util.Objects;
 public class Product {
     private String productName;
     protected int price;
+    protected boolean isDiscountProduct;
+    protected boolean isKidAvailable;
 
-    public Product(String productName, int price) {
+    public Product(String productName, int price, boolean isKidAvailable) {
         this.productName = productName;
         this.price = price;
+        this.isKidAvailable = isKidAvailable;
     }
 
     public String getProductName() {
@@ -17,6 +20,10 @@ public class Product {
 
     public int getPrice() {
         return price;
+    }
+
+    public boolean isDiscountProduct() {
+        return isDiscountProduct;
     }
 
     @Override

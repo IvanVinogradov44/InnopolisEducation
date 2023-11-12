@@ -8,6 +8,8 @@ public class Person {
     private String name;
     private int money;
     private List<Product> productsBag = new ArrayList<>();
+    protected int age;
+    protected int creditPotential;
 
     public Person(String name, int money) {
         this.name = name;
@@ -34,6 +36,21 @@ public class Person {
         this.money = money;
     }
 
+
+
+    public int tryToBySmth(Product currentProduct){
+        if(this.getMoney()>=currentProduct.getPrice()){
+            this.addProductsToBag(currentProduct);
+            this.setMoney(this.getMoney() - currentProduct.getPrice());
+            System.out.println(this.getName() + " купил " + currentProduct.getProductName());
+            return  0;
+        }
+        else{
+            System.out.println(this.getName() + " - не достаточно средств для покупки " + currentProduct.getProductName());
+            return 1;
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -49,7 +66,7 @@ public class Person {
 
     @Override
     public String toString() {
-        String template = "\n имя - %s, осталось денег - %d, покупки: %s";
+        String template = "\n имя - %s, осталось денег : %d, покупки: %s";
         String productList = "Нет покупок";
         if (!getProductsBag().isEmpty()) {
             productList = String.format("Покупки: %s", getProductsBag().toString());
