@@ -19,7 +19,7 @@ public class ProductDiscount extends Product{
     }
     @Override
     public int getPrice(){
-        int cost = 0;
+        int cost = price;
         if(currentDate.compareTo(discountExpirationDate) <=0) {
             double price = this.price - (this.price / 100 * discount);
             cost = (int)price;

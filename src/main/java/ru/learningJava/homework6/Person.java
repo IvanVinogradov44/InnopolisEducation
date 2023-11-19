@@ -66,10 +66,10 @@ public class Person {
 
     @Override
     public String toString() {
-        String template = "\n имя - %s, осталось денег : %d, покупки: %s";
+        String template = "\n имя - %s, осталось денег : %d, Покупки: %s";
         String productList = "Нет покупок";
         if (!getProductsBag().isEmpty()) {
-            productList = String.format("Покупки: %s", getProductsBag().toString());
+            productList = String.format("%s", getProductsBag().toString());
         }
         return String.format(template, getName(), getMoney(), productList);
     }

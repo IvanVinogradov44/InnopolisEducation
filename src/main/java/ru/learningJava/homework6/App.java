@@ -1,11 +1,13 @@
 package ru.learningJava.homework6;
 
-import org.w3c.dom.ls.LSOutput;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
         Product milk = new Product("Молоко", 80, true);
         Product bread = new Product("Хлеб", 50, true);
         Product beer = new Product("Пиво", 200, false);
@@ -48,6 +50,30 @@ public class App {
         visitors.add(adultIvan);
         visitors.add(oldBob);
 
+
+        String inputFilePath = "C:\\Users\\Vinny\\IdeaProjects\\InnopolisEducation\\src\\main\\java\\ru\\learningJava\\homework6\\InputFile.txt";
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFilePath))){
+            String line = bufferedReader.readLine();
+            while (line != null){
+                List <String> params = new ArrayList<>();
+                Collections.addAll(params, line.split(","));
+                line = bufferedReader.readLine();
+
+                switch (params.get(0)){
+                    case ("Person"):
+                        Person personFromFile = new Person(params.get(1), Integer.parseInt(params.get(2)));
+                        visitors.add(personFromFile);
+                        break;
+                    case ("Product"):
+                        Product productFromFile = new Product(params.get(1), Integer.parseInt(params.get(2)), Boolean.parseBoolean(params.get(3)));
+                        productFromFile.toString();
+                        productList.add(productFromFile);
+                        break;
+                }
+            }
+        }
+
+
         LinkedList<Person> queue = new LinkedList(visitors);
         Random randomProduct = new Random();
 
@@ -60,6 +86,30 @@ public class App {
         }
 
         System.out.println(visitors);
+    }
+
+    static String getParamsFromFile() throws IOException {
+        String inputFilePath = "C:\\Users\\Vinny\\IdeaProjects\\InnopolisEducation\\src\\main\\java\\ru\\learningJava\\homework6\\InputFile.txt";
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFilePath))){
+            String line = bufferedReader.readLine();
+            while (line != null){
+                List <String> params = new ArrayList<>();
+                Collections.addAll(params, line.split(","));
+                line = bufferedReader.readLine();
+
+                switch (params.get(0)){
+                    case ("Person"):
+                        Person personFromFile = new Person(params.get(1), Integer.parseInt(params.get(2)));
+
+                        break;
+                    case ("Product"):
+                        Product productFromFile = new Product(params.get(1), Integer.parseInt(params.get(2)), Boolean.parseBoolean(params.get(3)));
+                        productFromFile.toString();
+                        break;
+                }
+            }
+        }
+        return "";
     }
 
 
