@@ -50,7 +50,7 @@ public class App {
         visitors.add(adultIvan);
         visitors.add(oldBob);
 
-
+        //хотел сделать отдельным методом, но не смог получить доступ к спискам visitors и productList для добавления считанных посетителей и продуктов в основной поток программы
         String inputFilePath = "C:\\Users\\Vinny\\IdeaProjects\\InnopolisEducation\\src\\main\\java\\ru\\learningJava\\homework6\\InputFile.txt";
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFilePath))){
             String line = bufferedReader.readLine();
@@ -86,30 +86,6 @@ public class App {
         }
 
         System.out.println(visitors);
-    }
-
-    static String getParamsFromFile() throws IOException {
-        String inputFilePath = "C:\\Users\\Vinny\\IdeaProjects\\InnopolisEducation\\src\\main\\java\\ru\\learningJava\\homework6\\InputFile.txt";
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFilePath))){
-            String line = bufferedReader.readLine();
-            while (line != null){
-                List <String> params = new ArrayList<>();
-                Collections.addAll(params, line.split(","));
-                line = bufferedReader.readLine();
-
-                switch (params.get(0)){
-                    case ("Person"):
-                        Person personFromFile = new Person(params.get(1), Integer.parseInt(params.get(2)));
-
-                        break;
-                    case ("Product"):
-                        Product productFromFile = new Product(params.get(1), Integer.parseInt(params.get(2)), Boolean.parseBoolean(params.get(3)));
-                        productFromFile.toString();
-                        break;
-                }
-            }
-        }
-        return "";
     }
 
 
