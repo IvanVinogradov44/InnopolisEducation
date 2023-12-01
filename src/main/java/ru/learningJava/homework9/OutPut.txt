@@ -1,0 +1,9 @@
+Cars:
+[CarPerfomance - brand='BMW', model='M2m', yearOfCreation=2018, horsePower=410, acceleration=70, suspension=12, durability=5}addOns=[]
+, CarShow - brand='BMW', model='M5', yearOfCreation=1992, horsePower=340, acceleration=50, suspension=13, durability=20}stars=0
+]Race:
+[RaceCasual - range=15, route='Casual', reward=100, members=null, winner=null}
+, RaceCircuit - range=20, route='Circuit', reward=7, members=null, winner=null}laps=200
+, RaceDrag - range=25, route='Drag', reward=300, members=null, winner=null}
+, RaceDrift - range=30, route='JapanTogueDrift', reward=400, members=null, winner=null}
+]
