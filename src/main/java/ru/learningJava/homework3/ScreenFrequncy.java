@@ -4,7 +4,9 @@ import java.util.Random;
 
 public enum ScreenFrequncy {
     frequncy_60(60),
-    frequncy_75(75);
+    frequncy_75(75),
+    frequncy_144(144),
+    frequncy_175(175);
 
     public int getFrequncyValue() {
         return frequncyValue;
