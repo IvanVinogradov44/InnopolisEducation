@@ -19,6 +19,9 @@ public class TV implements Comparable<TV>{
         return brandName;
     }
 
+    public TV() {
+    }
+
     //Конструктор
     public TV (String brandName, boolean isOn, int currentChannel){
         this.brandName = brandName;
