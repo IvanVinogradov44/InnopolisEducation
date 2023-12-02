@@ -9,6 +9,9 @@ public class Person {
     private int money;
     private List<Product> productsBag = new ArrayList<>();
 
+    public Person() {
+    }
+
     public Person(String name, int money) {
         this.name = name;
         this.money = money;

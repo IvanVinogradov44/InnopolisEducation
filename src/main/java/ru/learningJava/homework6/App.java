@@ -58,7 +58,7 @@ public class App {
 
 
 
-    static String getPersonNameFromScaner(){
+    public static String getPersonNameFromScaner(){
         System.out.println("Введите имя покупателя");
         Scanner scanPersonName = new Scanner(System.in);
         String personName = scanPersonName.nextLine();
@@ -69,7 +69,7 @@ public class App {
         return personName;
     }
 
-    static int getPersonMoneyFromScaner(){
+    public static int getPersonMoneyFromScaner(){
         System.out.println("Введите кол-во денег покупателя");
         Scanner scanPersonMoney = new Scanner(System.in);
         int personMoney = scanPersonMoney.nextInt();
@@ -80,7 +80,7 @@ public class App {
         return personMoney;
     }
 
-    static String getProductNameFromScaner() {
+    public static String getProductNameFromScaner() {
         System.out.println("Введите название продукта");
         Scanner scanProductName = new Scanner(System.in);
         String productName = scanProductName.nextLine();
@@ -91,7 +91,7 @@ public class App {
         return productName;
     }
 
-    static int getProductPriceFromScanner(){
+    public static int getProductPriceFromScanner(){
         System.out.println("Введите цену продукта");
         Scanner scanProductPrice = new Scanner(System.in);
         int productPrice = scanProductPrice.nextInt();
