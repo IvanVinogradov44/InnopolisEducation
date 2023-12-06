@@ -51,7 +51,7 @@ public class App {
         visitors.add(oldBob);
 
         //хотел сделать отдельным методом, но не смог получить доступ к спискам visitors и productList для добавления считанных посетителей и продуктов в основной поток программы
-        String inputFilePath = "C:\\Users\\Vinny\\IdeaProjects\\InnopolisEducation\\src\\main\\java\\ru\\learningJava\\homework6\\InputFile.txt";
+        String inputFilePath = "src/main/java/ru/learningJava/homework6/InputFile.txt";
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFilePath))){
             String line = bufferedReader.readLine();
             while (line != null){
