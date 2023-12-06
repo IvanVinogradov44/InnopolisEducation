@@ -11,6 +11,9 @@ public class Person {
     protected int age;
     protected int creditPotential;
 
+    public Person() {
+    }
+
     public Person(String name, int money) {
         this.name = name;
         this.money = money;
