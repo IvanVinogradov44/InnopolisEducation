@@ -8,12 +8,7 @@ public class Product {
     protected boolean isDiscountProduct;
     protected boolean isKidAvailable;
 
-
-    public Product() {
-    }
-
-    public Product(String productName, int price) {
-
+    public Product(String productName, int price, boolean isKidAvailable) {
         this.productName = productName;
         this.price = price;
         this.isKidAvailable = isKidAvailable;
