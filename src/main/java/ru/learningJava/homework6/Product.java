@@ -4,14 +4,19 @@ import java.util.Objects;
 
 public class Product {
     private String productName;
-    private int price;
+    protected int price;
+    protected boolean isDiscountProduct;
+    protected boolean isKidAvailable;
+
 
     public Product() {
     }
 
     public Product(String productName, int price) {
+
         this.productName = productName;
         this.price = price;
+        this.isKidAvailable = isKidAvailable;
     }
 
     public String getProductName() {
@@ -20,6 +25,10 @@ public class Product {
 
     public int getPrice() {
         return price;
+    }
+
+    public boolean isDiscountProduct() {
+        return isDiscountProduct;
     }
 
     @Override
