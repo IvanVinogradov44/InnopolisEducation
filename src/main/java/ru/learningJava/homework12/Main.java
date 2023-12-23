@@ -4,14 +4,10 @@ import ru.learningJava.homework12.securityValidation.User;
 
 import java.io.IOException;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.DateTimeException;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -100,7 +96,6 @@ public class Main {
         try {
             return Integer.parseInt(age);
         } catch (NumberFormatException numberFormatException) {
-//            throw new ValidationException("Ошибка формата возраста");
             exceptionsList.add("Возраст");
             return 0;
         }
@@ -110,7 +105,6 @@ public class Main {
         try {
             return Sex.valueOf(sex);
         } catch (IllegalArgumentException illegalArgumentException) {
-//            throw new ValidationException();
             exceptionsList.add("Пол");
             return null;
         }
@@ -120,7 +114,6 @@ public class Main {
         if (phoneNumber.matches("^((8)+[0-9]{10})$")) {
             return Long.parseLong(phoneNumber);
         } else {
-//            throw new ValidationException("Формат номера телефона не соответствует");
             exceptionsList.add("Номер телефона");
             return 0;
         }
@@ -131,7 +124,6 @@ public class Main {
         try {
             return LocalDate.parse(date, dateFormat);
         } catch (DateTimeParseException exception) {
-//            throw new ValidationException("Формат даты не соответствует");
             exceptionsList.add("Дата");
             return null;
         }

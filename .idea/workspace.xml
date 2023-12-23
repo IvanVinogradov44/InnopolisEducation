@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="сделал домашнее задание 12 задача 1">
+    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="сделал домашнее задание 12 задача 2 исправление регулярки для учета цифр">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703337015956</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="сделал домашнее задание 12 задача 2 исправление регулярки для учета цифр">
+      <option name="closed" value="true" />
+      <created>1703337414474</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703337414474</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="сделал домашнее задание 12 задача 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал домашнее задание 12 задача 1" />
+    <MESSAGE value="сделал домашнее задание 12 задача 2 исправление регулярки для учета цифр" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал домашнее задание 12 задача 2 исправление регулярки для учета цифр" />
   </component>
 </project>

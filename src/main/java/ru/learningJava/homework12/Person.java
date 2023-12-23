@@ -2,7 +2,6 @@ package ru.learningJava.homework12;
 
 import java.io.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Person {
     private String secondName;
