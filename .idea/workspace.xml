@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="сделал домашнее задание 9">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/ValidationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="сделал домашнее задание 12 задача 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/WrongLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/WrongPasswordException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +52,44 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.learningJava.homework12.SecurityValidation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.User">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.Main" />
       <module name="InnopolisEducation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.learningJava.homework12.*" />
+          <option name="PATTERN" value="ru.learningJava.homework12.securityValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.securityValidation.User" />
+      <module name="InnopolisEducation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.learningJava.homework12.securityValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.practice.app" />
+      <module name="InnopolisEducation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.learningJava.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,6 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.User" />
+        <item itemvalue="Application.app" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -83,6 +114,15 @@
       <option name="presentableId" value="Default" />
       <updated>1702814329194</updated>
     </task>
+    <task id="LOCAL-00001" summary="сделал домашнее задание 12 задача 1">
+      <option name="closed" value="true" />
+      <created>1703014204588</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703014204588</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,5 +135,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="сделал домашнее задание 12 задача 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал домашнее задание 12 задача 1" />
   </component>
 </project>
