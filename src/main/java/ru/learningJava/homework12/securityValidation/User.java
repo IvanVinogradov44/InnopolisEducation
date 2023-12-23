@@ -24,13 +24,13 @@ public class User {
     }
 
     public static void checkLogin(String login){
-        if (!login.matches("^([A-Za-z_]{0,20})$")) {
+        if (!login.matches("^([A-Za-z0-9_]{0,20})$")) {
             throw new WrongLoginException("Логин не соответствует формату");
         }
     }
 
     public static void checkPassword(String password, String confirmPassword){
-        if (!password.matches("^([A-Za-z_]{0,20})$")) {
+        if (!password.matches("^([A-Za-z0-9_]{0,20})$")) {
             throw new WrongPasswordException("Пароль не соответствует формату");
         }
 

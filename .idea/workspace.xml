@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="сделал домашнее задание 12 задача 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/WrongLoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/securityValidation/WrongPasswordException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +53,7 @@
       <recent name="ru.learningJava.homework12.SecurityValidation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.User">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.Main" />
       <module name="InnopolisEducation" />
@@ -99,9 +95,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.User" />
         <item itemvalue="Application.app" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703014204588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="сделал домашнее задание 12 задача 1">
+      <option name="closed" value="true" />
+      <created>1703337015956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703337015956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
