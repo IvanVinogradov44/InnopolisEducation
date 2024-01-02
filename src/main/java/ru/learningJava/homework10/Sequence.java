@@ -1,23 +1,14 @@
 package ru.learningJava.homework10;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Optional;
-
-import static java.lang.String.format;
 
 public class Sequence {
-    public static void main(String[] args) {
-        int[] intArray = new int[]{10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
+    public static void printSequence(int[] intArray) {
         System.out.println(Arrays.toString(intArray));
         System.out.println(Arrays.toString(filter(intArray, new ByCondition() {
             @Override
             public boolean isOk(int number) {
-                if (number % 2 == 0) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return number % 2 == 0;
             }
         })));
 
@@ -29,11 +20,7 @@ public class Sequence {
                 for (int i = 0; i < currentNumber.length(); i++) {
                     sumChars = sumChars + currentNumber.charAt(i);
                 }
-                if (sumChars % 2 == 0) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return sumChars % 2 == 0;
 
             }
         })));
