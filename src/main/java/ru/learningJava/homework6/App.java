@@ -1,5 +1,7 @@
 package ru.learningJava.homework6;
 
+import ru.learningJava.homework6.utils.Parser;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +15,7 @@ public class App {
         Product beer = new Product("Пиво", 200, false);
         Product chiken = new Product("Курица", 250, true);
         Product fish = new Product("Рыба", 500, true);
-        //Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner(), productAvailableForKids());
+        Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner(), productAvailableForKids());
         ProductDiscount sugar = new ProductDiscount("Сахар", 100, 10, true);
         ProductDiscount coffee = new ProductDiscount("Кофе", 150, 20, true);
         ProductDiscount vegetables = new ProductDiscount("Овощи", 200, 15, true);
@@ -133,7 +135,7 @@ public class App {
 
         System.out.println("Введите цену продукта");
         Scanner scanProductPrice = new Scanner(System.in);
-        int productPrice = scanProductPrice.nextInt();
+        int productPrice = Parser.validateCount(scanProductPrice.nextLine());
         while (productPrice <= 0) {
             System.out.println("Цена продукта не может быть отрицательным");
             productPrice = scanProductPrice.nextInt();
