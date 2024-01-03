@@ -1,5 +1,7 @@
 package ru.learningJava.homework10;
 
+import ru.learningJava.homework10.utils.ByCondition;
+
 import java.util.Arrays;
 
 public class Sequence {
@@ -7,14 +9,14 @@ public class Sequence {
         System.out.println(Arrays.toString(intArray));
         System.out.println(Arrays.toString(filter(intArray, new ByCondition() {
             @Override
-            public boolean isOk(int number) {
-                return number % 2 == 0;
+            public <T>boolean isOk(T number) {
+                return (int) number % 2 == 0;
             }
         })));
 
         System.out.println(Arrays.toString(filter(intArray, new ByCondition() {
             @Override
-            public boolean isOk(int number) {
+            public <T> boolean isOk(T number) {
                 String currentNumber = "" + number;
                 int sumChars = 0;
                 for (int i = 0; i < currentNumber.length(); i++) {
