@@ -3,7 +3,7 @@ package ru.learningJava.homework11.model;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Car {
+public class Car implements Comparator{
     private String carRegNumber;
     private String model;
     private String color;
@@ -61,12 +61,11 @@ public class Car {
         this.price = price;
     }
 
-    Comparator<Car> comparator = new Comparator<Car>() {
-        @Override
-        public int compare(Car o1, Car o2) {
-            return 0;
-        }
-    };
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        return 0;
+    }
 
     @Override
     public boolean equals(Object o) {

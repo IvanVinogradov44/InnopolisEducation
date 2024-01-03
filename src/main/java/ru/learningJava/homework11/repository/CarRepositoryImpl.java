@@ -33,10 +33,8 @@ public class CarRepositoryImpl implements CarRepository{
     }
 
     @Override
-    public void countUniqueModelInPriceRange(int min, int max) {
+    public void countUniqueModelInPriceRange(int minPrice, int maxPrice) {
         putInfoToFile("2 стрим для поиска количества уникальных моделей в заданном ценовом диапазоне \n");
-        int minPrice = 0;
-        int maxPrice = 1000000;
         putInfoToFile("Моделей в ценовом диапазоне: " + carList.stream().filter(car -> car.getPrice() >= minPrice && car.getPrice() <= maxPrice).map(car -> car.getModel()).distinct().count() + "\n");
     }
 
@@ -47,9 +45,8 @@ public class CarRepositoryImpl implements CarRepository{
     }
 
     @Override
-    public void AvgPriceOfModel(String model) {
+    public void AvgPriceOfModel(String modelToFind) {
         putInfoToFile("4 Стрим для опредения Средней стоимости искомой модели modelToFind\n");
-        String modelToFind = "Toyota";
         putInfoToFile("" + carList.stream().filter(car -> car.getModel().equals(modelToFind)).mapToDouble(car -> car.getPrice()).average().getAsDouble());
     }
 
@@ -58,7 +55,7 @@ public class CarRepositoryImpl implements CarRepository{
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(outPutFilePath, true))){
             bufferedWriter.write(text);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.getMessage();
         }
     }
 
@@ -74,7 +71,7 @@ public class CarRepositoryImpl implements CarRepository{
                 carList.add(car);
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.getMessage();
         }
     }
 }
