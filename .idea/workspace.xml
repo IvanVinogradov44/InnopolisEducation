@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="правка гит игнора">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+
+    <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="исправил домашку 8, что бы хоть работало">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/cars.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/outPut.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/repository/CarRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +25,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+1
         <option value="Interface" />
+        <option value="Class" />
+
       </list>
     </option>
   </component>
@@ -29,7 +40,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ZIYoGsA3Jh6xT6fbeTdtA3wPIq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Vinny/IdeaProjects/InnopolisEducation&quot;,
@@ -92,6 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.User" />
@@ -107,6 +124,7 @@
       </list>
     </recent_temporary>
   </component>
+
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Исправление замечаний домашнего задания 10">
       <option name="closed" value="true" />
@@ -141,23 +159,53 @@
       <updated>1704287226450</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+
     <MESSAGE value="Исправление замечаний домашнего задания 10" />
     <MESSAGE value="Домашняя работа 13, 2 задача" />
     <MESSAGE value="правка гит игнора" />
     <option name="LAST_COMMIT_MESSAGE" value="правка гит игнора" />
+
   </component>
 </project>
