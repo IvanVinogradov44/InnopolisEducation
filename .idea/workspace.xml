@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="исправил домашку 8, что бы хоть работало">
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/cars.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/outPut.txt" afterDir="false" />
@@ -13,6 +14,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +25,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+1
         <option value="Interface" />
         <option value="Class" />
+
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="homeworks/homework13" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,33 +45,23 @@
 }</component>
   <component name="ProjectId" id="2ZIYoGsA3Jh6xT6fbeTdtA3wPIq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Vinny/IdeaProjects/InnopolisEducation&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.learningJava.homework11.test" />
-      <recent name="ru.learningJava.homework11.model" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework11.test.Main" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework6.App" />
       <module name="InnopolisEducation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.learningJava.homework11.test.*" />
+          <option name="PATTERN" value="ru.learningJava.homework6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,30 +69,97 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.Main" />
+      <module name="InnopolisEducation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.learningJava.homework12.securityValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.securityValidation.User" />
+      <module name="InnopolisEducation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.learningJava.homework12.securityValidation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.learningJava.practice.app" />
+      <module name="InnopolisEducation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.learningJava.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.User" />
+      <item itemvalue="Application.app" />
+      <item itemvalue="Application.App" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.app" />
+        <item itemvalue="Application.User" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="сделал домашнее задание 9">
+    <task id="LOCAL-00001" summary="Исправление замечаний домашнего задания 10">
       <option name="closed" value="true" />
-      <created>1701896337317</created>
+      <created>1704223183597</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1701896337317</updated>
+      <updated>1704223183597</updated>
     </task>
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="исправил домашку 8, что бы хоть работало" />
-      <created>1702111235068</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1702111235068</updated>
+    <task id="LOCAL-00002" summary="Исправление замечаний домашнего задания 10">
+      <option name="closed" value="true" />
+      <created>1704224608501</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704224608501</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00003" summary="Домашняя работа 13, 2 задача">
+      <option name="closed" value="true" />
+      <created>1704286823041</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704286823041</updated>
+    </task>
+    <task id="LOCAL-00004" summary="правка гит игнора">
+      <option name="closed" value="true" />
+      <created>1704287226450</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704287226450</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,7 +201,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="сделал домашнее задание 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделал домашнее задание 9" />
+
+    <MESSAGE value="Исправление замечаний домашнего задания 10" />
+    <MESSAGE value="Домашняя работа 13, 2 задача" />
+    <MESSAGE value="правка гит игнора" />
+    <option name="LAST_COMMIT_MESSAGE" value="правка гит игнора" />
+
   </component>
 </project>
