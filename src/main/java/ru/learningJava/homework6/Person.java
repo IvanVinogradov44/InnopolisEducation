@@ -1,5 +1,7 @@
 package ru.learningJava.homework6;
 
+import ru.learningJava.homework6.utils.Validator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -42,7 +44,7 @@ public class Person {
 
 
     public int tryToBySmth(Product currentProduct){
-        if(this.getMoney()>=currentProduct.getPrice()){
+        if(Validator.isCanBuy(currentProduct.getPrice(), this.getMoney())){
             this.addProductsToBag(currentProduct);
             this.setMoney(this.getMoney() - currentProduct.getPrice());
             System.out.println(this.getName() + " купил " + currentProduct.getProductName());

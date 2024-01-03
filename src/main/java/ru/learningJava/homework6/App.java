@@ -1,6 +1,7 @@
 package ru.learningJava.homework6;
 
 import ru.learningJava.homework6.utils.Parser;
+import ru.learningJava.homework6.utils.Validator;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -15,7 +16,7 @@ public class App {
         Product beer = new Product("Пиво", 200, false);
         Product chiken = new Product("Курица", 250, true);
         Product fish = new Product("Рыба", 500, true);
-        Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner(), productAvailableForKids());
+        //Product product = new Product(getProductNameFromScaner(), getProductPriceFromScanner(), productAvailableForKids());
         ProductDiscount sugar = new ProductDiscount("Сахар", 100, 10, true);
         ProductDiscount coffee = new ProductDiscount("Кофе", 150, 20, true);
         ProductDiscount vegetables = new ProductDiscount("Овощи", 200, 15, true);
@@ -24,7 +25,7 @@ public class App {
         Person sasha = new Person("Саша", 500);
         Person alena = new Person("Алена", 1500);
         Person ben = new Person("Бен", 60);
-        //Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
+        Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
         PersonKid kidAlex = new PersonKid("Alex", 500, 5);
         PersonKid kidKira = new PersonKid("Kira", 700, 9);
         PersonAdult adultIvan = new PersonAdult("Ivan", 1000, 35, 1000);
@@ -46,7 +47,7 @@ public class App {
         visitors.add(sasha);
         visitors.add(alena);
         visitors.add(ben);
-        //visitors.add(person);
+        visitors.add(person);
         visitors.add(kidAlex);
         visitors.add(kidKira);
         visitors.add(adultIvan);
@@ -111,7 +112,7 @@ public class App {
         System.out.println("Введите кол-во денег покупателя");
         Scanner scanPersonMoney = new Scanner(System.in);
         int personMoney = scanPersonMoney.nextInt();
-        while (personMoney < 0) {
+        while (Validator.lessZero(personMoney)) {
             System.out.println("Кол-во денег не может быть отрицательным");
             personMoney = scanPersonMoney.nextInt();
         }
