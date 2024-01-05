@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 
+
     <list default="true" id="6cda4c7c-b51f-462f-89d9-fbb163646dd4" name="Changes" comment="исправил домашку 8, что бы хоть работало">
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/cars.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework11/data/outPut.txt" afterDir="false" />
@@ -16,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Changes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Changes.xml" afterDir="false" />
 
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/learningJava/homework12/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-1
-        <option value="Interface" />
+
+        <option value="Enum" />
         <option value="Class" />
 
       </list>
@@ -35,12 +37,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="homeworks/homework13" />
+
+        <entry key="$PROJECT_DIR$" value="homeworks/homework11" />
+
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
+
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2ZIYoGsA3Jh6xT6fbeTdtA3wPIq" />
@@ -69,6 +74,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.learningJava.homework12.Main" />
       <module name="InnopolisEducation" />
