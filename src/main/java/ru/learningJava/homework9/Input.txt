@@ -1,0 +1,7 @@
+CarPerfomance,BMW,M2m,2018,410,70,12,5
+CarShow,BMW,M5,1992,340,50,13,20,
+RaceCasual,15,Casual,100
+RaceCircuit,20,Circuit,7,200
+RaceDrag,25,Drag,300
+RaceDrift,30,JapanTogueDrift,400
+RaceTimeLimit,35,TimeAttack,75,500
