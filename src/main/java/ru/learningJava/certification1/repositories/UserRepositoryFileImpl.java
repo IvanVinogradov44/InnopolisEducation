@@ -23,6 +23,12 @@ public class UserRepositoryFileImpl implements UserRepository{
         return foundUser;
     }
 
+    public User findByLogin(String login) {
+
+        User foundUser = userList.stream().filter(user -> user.getLogin().equals(login)).findFirst().get();
+        return foundUser;
+    }
+
     @Override
     public List<User> findAll() {
 
