@@ -19,6 +19,7 @@ public class User {
     private boolean isWorker;
 
     public User() {
+        this.id = UUID.randomUUID().toString();
     }
 
     public User(String login,

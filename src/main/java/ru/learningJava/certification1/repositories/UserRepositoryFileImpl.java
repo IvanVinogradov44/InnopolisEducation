@@ -5,8 +5,9 @@ import ru.learningJava.certification1.utils.FileReaderWriter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
-public class UserRepositoryFileImpl implements UserRepository{
+public class UserRepositoryFileImpl implements UserRepository {
 
     List<User> userList = findAll();
 
@@ -18,15 +19,21 @@ public class UserRepositoryFileImpl implements UserRepository{
 
     @Override
     public User findById(String id) {
-
-        User foundUser = userList.stream().filter(user -> user.getId().equals(id)).findFirst().get();
-        return foundUser;
+        try {
+            User foundUser = userList.stream().filter(user -> user.getId().equals(id)).findFirst().get();
+            return foundUser;
+        } catch (NoSuchElementException exception) {
+            throw new NoSuchElementException("пользователь не найден");
+        }
     }
 
     public User findByLogin(String login) {
-
-        User foundUser = userList.stream().filter(user -> user.getLogin().equals(login)).findFirst().get();
-        return foundUser;
+        try {
+            User foundUser = userList.stream().filter(user -> user.getLogin().equals(login)).findFirst().get();
+            return foundUser;
+        } catch (NoSuchElementException exception) {
+            throw new NoSuchElementException("пользователь не найден");
+        }
     }
 
     @Override
@@ -37,16 +44,24 @@ public class UserRepositoryFileImpl implements UserRepository{
 
     @Override
     public void update(User updatedUser) {
-        User userForUpdate = userList.stream().filter(user -> user.getId().equals(updatedUser.getId())).findFirst().get();
-        userList.set(userList.indexOf(userForUpdate),updatedUser);
-        FileReaderWriter.writeUsersToFile(userList);
+        try {
+            User userForUpdate = userList.stream().filter(user -> user.getId().equals(updatedUser.getId())).findFirst().get();
+            userList.set(userList.indexOf(userForUpdate), updatedUser);
+            FileReaderWriter.writeUsersToFile(userList);
+        } catch (NoSuchElementException exception) {
+            throw new NoSuchElementException("пользователь не найден");
+        }
     }
 
     @Override
     public void deleteById(String idForDelete) {
-        User userToDelete = userList.stream().filter(user -> user.getId().equals(idForDelete)).findFirst().get();
-        userList.remove(userToDelete);
-        FileReaderWriter.writeUsersToFile(userList);
+        try {
+            User userToDelete = userList.stream().filter(user -> user.getId().equals(idForDelete)).findFirst().get();
+            userList.remove(userToDelete);
+            FileReaderWriter.writeUsersToFile(userList);
+        } catch (NoSuchElementException exception) {
+            throw new NoSuchElementException("пользователь не найден");
+        }
     }
 
     @Override

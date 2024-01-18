@@ -25,7 +25,7 @@ public class FileReaderWriter {
                 }
             });
         } catch (IOException e) {
-            e.getMessage();
+            System.out.println(e.getMessage() + "Файл не найден");
         }
     }
 
@@ -34,7 +34,7 @@ public class FileReaderWriter {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(getUserFilePath()))){
             bufferedWriter.write("");
         } catch (IOException e) {
-            e.getMessage();
+            System.out.println(e.getMessage() + "Файл не найден");
         }
     }
 
@@ -51,7 +51,7 @@ public class FileReaderWriter {
             }
             return userList;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Файл не найден");
         }
     }
 }
