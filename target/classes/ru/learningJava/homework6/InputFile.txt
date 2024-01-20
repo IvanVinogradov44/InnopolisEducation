@@ -1,6 +1,0 @@
-Person,Valera,1500
-Person,Rita,2000
-Person,Tolya,2500
-Product,Kola,125,true
-Product,Tea,75,true
-Product,Watermelone,300,true
