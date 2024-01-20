@@ -1,5 +1,8 @@
 package ru.learningJava.homework6;
 
+import ru.learningJava.homework6.utils.Parser;
+import ru.learningJava.homework6.utils.Validator;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +25,7 @@ public class App {
         Person sasha = new Person("Саша", 500);
         Person alena = new Person("Алена", 1500);
         Person ben = new Person("Бен", 60);
-        //Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
+        Person person = new Person(getPersonNameFromScaner(), getPersonMoneyFromScaner());
         PersonKid kidAlex = new PersonKid("Alex", 500, 5);
         PersonKid kidKira = new PersonKid("Kira", 700, 9);
         PersonAdult adultIvan = new PersonAdult("Ivan", 1000, 35, 1000);
@@ -44,7 +47,7 @@ public class App {
         visitors.add(sasha);
         visitors.add(alena);
         visitors.add(ben);
-        //visitors.add(person);
+        visitors.add(person);
         visitors.add(kidAlex);
         visitors.add(kidKira);
         visitors.add(adultIvan);
@@ -109,7 +112,7 @@ public class App {
         System.out.println("Введите кол-во денег покупателя");
         Scanner scanPersonMoney = new Scanner(System.in);
         int personMoney = scanPersonMoney.nextInt();
-        while (personMoney < 0) {
+        while (Validator.lessZero(personMoney)) {
             System.out.println("Кол-во денег не может быть отрицательным");
             personMoney = scanPersonMoney.nextInt();
         }
@@ -133,7 +136,7 @@ public class App {
 
         System.out.println("Введите цену продукта");
         Scanner scanProductPrice = new Scanner(System.in);
-        int productPrice = scanProductPrice.nextInt();
+        int productPrice = Parser.validateCount(scanProductPrice.nextLine());
         while (productPrice <= 0) {
             System.out.println("Цена продукта не может быть отрицательным");
             productPrice = scanProductPrice.nextInt();
