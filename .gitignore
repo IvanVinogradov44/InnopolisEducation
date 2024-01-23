@@ -1,10 +1,8 @@
 ### IntelliJ IDEA ###
-
-.idea/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
+.idea/
 
 ### Eclipse ###
 .apt_generated
@@ -36,4 +34,5 @@ bin/
 /.idea/vcs.xml
 /.idea/workspace.xml
 /InnopolisEducation.iml
-/src/
+/target/
+
