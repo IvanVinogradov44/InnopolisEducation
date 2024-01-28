@@ -6,6 +6,7 @@ import java.util.Objects;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public abstract class Car {
     private String brand;
     private String model;

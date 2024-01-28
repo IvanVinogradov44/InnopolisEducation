@@ -1,6 +1,9 @@
 package ru.learningJava.homework9.cars;
 
+import lombok.NoArgsConstructor;
+
 import java.util.Objects;
+
 
 public class CarShow extends Car {
     private int stars;

@@ -9,7 +9,7 @@ import lombok.experimental.SuperBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
-@Setter
+
 public class CarPerfomance extends Car {
     private List<String> addOns = new ArrayList<>();
 
