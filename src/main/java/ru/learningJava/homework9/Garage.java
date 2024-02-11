@@ -1,19 +1,18 @@
 package ru.learningJava.homework9;
 
 import java.util.List;
+
+import lombok.Getter;
 import ru.learningJava.homework9.cars.*;
 
 public class Garage {
+    @Getter
     private List<Car> parkedCars;
 
     public Garage() {
     }
 
-    public List<Car> getParkedCars() {
-        return parkedCars;
-    }
-
-    public void setParkedCars(Car car) {
+    public void addParkedCars(Car car) {
 
         this.parkedCars.add(car);
     }
@@ -34,12 +33,12 @@ public class Garage {
         return carPerfomance;
     }
 
-    public CarPerfomance upgradeEngine(CarPerfomance carPerfomance){
+    private CarPerfomance upgradeEngine(CarPerfomance carPerfomance){
         carPerfomance.setHorsePower(carPerfomance.getHorsePower()/10*15);
         return carPerfomance;
     }
 
-    public void upgradeSuspension(CarPerfomance carPerfomance){
+    private void upgradeSuspension(CarPerfomance carPerfomance){
         carPerfomance.setSuspension(carPerfomance.getSuspension()/100*75);
     }
 }
